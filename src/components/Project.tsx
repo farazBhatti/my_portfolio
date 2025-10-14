@@ -4,6 +4,7 @@ import drowsinessVideo from "../assets/videos/drowsiness.mp4";
 import peopleCounterVideo from "../assets/videos/people_counter.mp4";
 import soccerVideo from "../assets/videos/soccer.mp4";
 import volleyBallVideo from "../assets/videos/volleyBall.mp4";
+import defectDetectionVideo from "../assets/videos/defect_detection.mp4"; // ✅ new import
 
 import "../assets/styles/Project.scss";
 
@@ -25,6 +26,7 @@ function Project() {
     { video: peopleCounterVideo, title: "AI People Counter", desc: "..." },
     { video: soccerVideo, title: "Soccer Tracking", desc: "..." },
     { video: volleyBallVideo, title: "Volleyball Tracking", desc: "..." },
+    { video: defectDetectionVideo, title: "Defect Detection System", desc: "..." }, // ✅ new project
   ];
 
   return (
@@ -61,13 +63,13 @@ function Project() {
       {activeVideoIndex !== null && (
         <div className="video-modal" onClick={closeModal}>
           <video
-            key={activeVideoIndex} // forces React to re-render new video each time
+            key={activeVideoIndex}
             src={projects[activeVideoIndex].video}
             autoPlay
             controls
-            muted={false} // allow sound
+            muted={false}
             style={{ width: "80%", maxHeight: "80%", borderRadius: "10px" }}
-            onClick={(e) => e.stopPropagation()} // prevents closing when clicking video
+            onClick={(e) => e.stopPropagation()}
           />
         </div>
       )}
@@ -76,4 +78,3 @@ function Project() {
 }
 
 export default Project;
-
