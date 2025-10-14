@@ -39,7 +39,7 @@
     p {
         font-size: 1.5em;
         margin-block-start: 0px;
-        margin-block-end: 0px;
+        margin-block-end: 130px;
     }
 
     h1 {
@@ -51,6 +51,8 @@
 
 .about-section .image-wrapper {
     z-index: 2;
+    transform: translateY(-60px); // 👈 moves image up by 50px
+
     img {
         width: 150px;
         border-radius: 50%;
