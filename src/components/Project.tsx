@@ -4,7 +4,8 @@ import drowsinessVideo from "../assets/videos/drowsiness.mp4";
 import peopleCounterVideo from "../assets/videos/people_counter.mp4";
 import soccerVideo from "../assets/videos/soccer.mp4";
 import volleyBallVideo from "../assets/videos/volleyBall.mp4";
-import defectDetectionVideo from "../assets/videos/defect_detection.mp4"; // ✅ new import
+import defectDetectionVideo from "../assets/videos/defect_detection.mp4";
+import carStudioDemoVideo from "../assets/videos/car_studio_demo.mp4"; // ✅ NEW VIDEO
 
 import "../assets/styles/Project.scss";
 
@@ -26,7 +27,12 @@ function Project() {
     { video: peopleCounterVideo, title: "AI People Counter", desc: "..." },
     { video: soccerVideo, title: "Soccer Tracking", desc: "..." },
     { video: volleyBallVideo, title: "Volleyball Tracking", desc: "..." },
-    { video: defectDetectionVideo, title: "Defect Detection System", desc: "..." }, // ✅ new project
+    { video: defectDetectionVideo, title: "Defect Detection System", desc: "..." },
+    {
+      video: carStudioDemoVideo,
+      title: "Car Studio Enhancement System",
+      desc: "AI-based car background removal, realistic shadow generation, translucent windows, and license plate anonymization."
+    }, // ✅ NEW PROJECT
   ];
 
   return (
